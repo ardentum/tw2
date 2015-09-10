@@ -58,3 +58,23 @@ a {
     margin: 5px;
   }
 }
+
+.content__actions {
+  position: relative;
+  height: 50px;
+  padding: 75px 0;
+
+  .more-experiences {
+    ._stroke-button(@mainTextColor);
+    .position-center;
+    transform: translate(-100%, -50%);
+    margin-left: -5px;
+  }
+
+  .or-explore {
+    ._stroke-button(@importantColor);
+    .position-center;
+    transform: translate(0%, -50%);
+    margin-left: 5px;
+  }
+}
