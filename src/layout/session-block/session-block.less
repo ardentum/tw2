@@ -1,0 +1,41 @@
+.session-block {
+  @imageSize: 60px;
+
+  position: relative;
+  padding-left: @imageSize + 15px;
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: @imageSize;
+    height: @imageSize;
+    background: #222;
+    border-radius: 50px;
+    display: inline-block;
+  }
+
+  &__name {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    line-height: @imageSize;
+  }
+
+  &__notifications {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    background: red;
+    position: relative;
+    top: -1em;
+    left: 0.5em;
+  }
+
+  &__actions {
+    margin-top: -20px;
+    font-size: 12px;
+  }
+}

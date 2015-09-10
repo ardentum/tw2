@@ -1,0 +1,61 @@
+.search-bar {
+  padding: 50px 75px 100px 75px;
+
+  &__container {
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  &__geo-select {
+    padding: 0 15px;
+    line-height: 50px;
+    width: 370px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: solid 1px @mainTextColor;
+    margin-right: 5px;
+  }
+
+  &__query {
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    background: #fff;
+    margin-right: 5px;
+  }
+
+  .default-button {
+    border: 0;
+    margin: 0;
+    background: @importantColor;
+    border-radius: 3px;
+    line-height: 50px;
+    padding: 0 35px;
+    color: @mainTextColor;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  &__submit {
+    .default-button;
+  }
+
+  &__options {
+    line-height: 100px;
+
+    .calendar {
+      display: inline-block;
+      width: 200px;
+    }
+  }
+
+  &__sort-by {
+    display: inline-block;
+  }
+}

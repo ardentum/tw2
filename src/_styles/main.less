@@ -1,0 +1,42 @@
+html *
+{
+   font-size: 1em;
+   font-family: @mainFont;
+}
+
+body {
+  background: @bgColor;
+  color: @mainTextColor;
+}
+
+a {
+  text-decoration: underline;
+  color: @mainLinkColor;
+  cursor: pointer;
+}
+
+.main-wrapper {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 2*@step 0;
+  position: relative;
+
+  &__logo {
+    .position-center;
+    font-size: 24px;
+  }
+
+  &__geo {
+    .position-right;
+    a {
+      text-decoration: none;
+      color: @mainTextColor;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
