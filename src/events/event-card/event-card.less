@@ -1,0 +1,69 @@
+.event-card {
+  @imageHeight: 145px;
+  display: inline-block;
+  width: 280px;
+  background: #fff;
+  font-size: 13px;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+
+  &__user {
+    .position-center;
+    top: @imageHeight / 2;
+  }
+
+  &__image {
+    width: 100%;
+    height: @imageHeight;
+    background-color: bisque;
+  }
+
+  &__content {
+    padding: 25px 25px 45px 25px;
+    color: #222;
+  }
+
+  &__type {
+    color: #aaa;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 6px 0;
+  }
+
+  &__tags {
+    margin-top: 10px;
+  }
+
+  .tag {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0 5px;
+    background: #00B39B;
+    color: #fff;
+    margin-right: 5px;
+  }
+
+  &__date-wrapper {
+    background: #F10066;
+    padding: 25px;
+    color: #fff;
+  }
+
+  &__date {
+    display: inline-block;
+    font-size: 16px;
+    width: 120px;
+    padding-left: 30px;
+  }
+
+  &__time {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 30px;
+  }
+}

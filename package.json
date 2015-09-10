@@ -8,7 +8,11 @@
     "gulp-dest": "^0.2.2",
     "gulp-jade": "^1.1.0",
     "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^3.0.0",
     "gulp-util": "^3.0.6",
-    "less": "^2.5.1"
+    "gulp-watch": "^4.3.5",
+    "less": "^2.5.1",
+    "minimist": "^1.2.0"
   }
 }

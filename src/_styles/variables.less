@@ -1,10 +1,12 @@
 @mainFont: "Open Sans";
-@bgColor: #59C496;
+@bgColor: #00CE97;
 
 
 @mainTextColor : #fff;
 @mainLinkColor : #C3E8D7;
-@importantColor: #DD466F;
+@importantColor: #F40064;
+@importantColorHover: #db005f;
+@importantColorActive: #c70056;
 
 @step: 10px;
 
@@ -20,4 +22,42 @@
   top: 50%;
   right: 0%;
   transform: translate(0, -50%);
+}
+
+.round-image (@imageSize) {
+  width: @imageSize;
+  height: @imageSize;
+  border-radius: @imageSize;
+  background: #222;
+  display: inline-block;
+}
+
+.transparent-button {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 5px 15px;
+  border: solid 2px @mainTextColor;
+  background: transparent;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  transition: all 0.1s ease;
+  outline: 0;
+
+  &:hover {
+    background: rgba(255,255,255,0.2);
+  }
+
+  &:active {
+    background: rgba(255,255,255,0.3);
+  }
+
+  &.active {
+    background: #fff;
+    color: @bgColor;
+
+    &:hover, &:active {
+      background: #fff;
+    }
+  }
 }

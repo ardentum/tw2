@@ -1,0 +1,31 @@
+.user-block {
+  width: 160px;
+  display: inline-block;
+  text-align: center;
+
+  &__image {
+    .round-image(50px);
+  }
+
+  &__name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  &__rating {
+    display: inline-block;
+    width: 100px;
+
+    div {
+      background: gold;
+      height: 20px;
+    }
+
+    .value-0 { width: 0; }
+    .value-1 { width: 20%; }
+    .value-2 { width: 40%; }
+    .value-3 { width: 60%; }
+    .value-4 { width: 80%; }
+    .value-5 { width: 100%; }
+  }
+}
