@@ -1,6 +1,6 @@
 @mainFont: "Open Sans";
 @bgColor: #00CE97;
-
+@darkBgColor: #00B29B;
 
 @mainTextColor : #fff;
 @mainLinkColor : #C3E8D7;
@@ -75,32 +75,3 @@
   }
 }
 
-._filter-button {
-  display: inline-block;
-  vertical-align: baseline;
-  padding: 5px 15px;
-  border: solid 2px @mainTextColor;
-  background: transparent;
-  border-radius: 30px;
-  box-sizing: border-box;
-  margin-left: 10px;
-  transition: all 0.1s ease;
-  outline: 0;
-
-  &:hover {
-    background: rgba(255,255,255,0.2);
-  }
-
-  &:active {
-    background: rgba(255,255,255,0.3);
-  }
-
-  &.active {
-    background: #fff;
-    color: @bgColor;
-
-    &:hover, &:active {
-      background: #fff;
-    }
-  }
-}

@@ -7,6 +7,7 @@ html *
 body {
   background: @bgColor;
   color: @mainTextColor;
+  position: relative;
 }
 
 a {
@@ -76,5 +77,26 @@ a {
     .position-center;
     transform: translate(0%, -50%);
     margin-left: 5px;
+  }
+}
+
+.footer {
+  padding: 40px 0 40px 0;
+  background: @darkBgColor;
+
+  &__logo {
+    font-size: 24px;
+    em {
+      font-size: 16px;
+    }
+  }
+
+  &__menu {
+    margin-top: 10px;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      margin-right: 20px;
+    }
   }
 }

@@ -1,0 +1,44 @@
+.switch {
+  cursor: pointer;
+  user-select: none;
+
+  &__input {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+
+  &__input:checked + &__label {
+    background: #fff;
+    color: @bgColor;
+
+    &:hover, &:active {
+      background: #fff;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 5px 15px;
+    border: solid 2px @mainTextColor;
+    color: @mainTextColor;
+    background: transparent;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    transition: all 0.1s ease;
+    outline: 0;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    &:active {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    &.active {  }
+  }
+}
