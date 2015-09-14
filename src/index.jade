@@ -6,8 +6,8 @@ html.no-js
     title
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='stylesheets/normalize.css')
-    link(rel='stylesheet', href='main.css')
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='/main.css')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css')
     //-script(src='javascripts/vendor/modernizr-2.7.1.min.js')
   body
@@ -25,16 +25,8 @@ html.no-js
           em Front
         .header__geo
           a Munich, Germany
-      include layout/search-bar/search-bar
-      .content
-        .content__list
-          include events/event-card/event-card
-          include events/event-card/event-card
-          include events/event-card/event-card
-          include events/event-card/event-card
-        .content__actions
-          .more-experiences More experiences
-          .or-explore Or explore
+        include ./layout/session-block/session-block
+    block content
     footer.footer
       .main-wrapper
         .footer__logo
