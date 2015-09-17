@@ -16,9 +16,25 @@ a {
   cursor: pointer;
 }
 
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
 .main-wrapper {
   width: 1150px;
   margin: 0 auto;
+
+  &.global {
+    box-sizing: border-box;
+    padding-bottom: 150px;
+    min-height: 100vh;
+  }
 }
 
 .header {
@@ -55,7 +71,7 @@ a {
   margin-left: -5px;
   margin-right: -5px;
 
-  .event-card {
+  .experience-card {
     margin: 5px;
   }
 }
@@ -81,6 +97,10 @@ a {
 }
 
 .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 40px 0 40px 0;
   background: @darkBgColor;
 

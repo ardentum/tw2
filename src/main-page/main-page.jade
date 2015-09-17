@@ -1,11 +1,34 @@
 extends /index.jade
+include /layout/search-bar/search-bar
+
+
 block content
-    .content
+    .main-page
+        .main-page__search
+            h2.main-page__title
+                | Find unique experiences around the world,
+                | learn something new and share your passion
+            .main-page__search-bar
+                +search-bar({modifier: 'main-page', sorting: false, geo: false})
+            .main-page__random
+                h3 Want to learn something new
+                button.button_red Random experience
+            .main-page__popular-experiences
+                .tag Rocket science
+                .tag Gastronomy
+                .tag BDSM
+                .tag Programming
+                .tag Cognitive Neuroscience
+                .tag Mindfulness
+
+        .main-page__upcoming
+            h2 Upcoming experiences in Munich
+
         .content__list
             include /experiences/experience-card/experience-card
             include /experiences/experience-card/experience-card
             include /experiences/experience-card/experience-card
             include /experiences/experience-card/experience-card
         .content__actions
-            .more-experiences More experiences
-            .or-explore Or explore
+            button.more-experiences More experiences
+            button.or-explore Or explore

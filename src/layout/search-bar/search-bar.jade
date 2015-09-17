@@ -1,12 +1,19 @@
-.search-bar
-    .search-bar__container
-        .search-bar__geo-select
-        .search-bar__query
-        button.search-bar__submit Find
+include /components/icon/icon
 
-        .search-bar__options
-            .calendar Calendar
-            .search-bar__sort-by
-                | Sort by
-                include /components/switch/switch
-                include /components/switch/switch
+mixin search-bar(attrs)
+    div(class=("search-bar" + attrs.modifier ? "_" + attrs.modifier : ""))
+        .search-bar__container
+            if attrs.geo !== false
+                .search-bar__geo-select
+            .search-bar__query
+            button.button_red Find
+
+            .search-bar__options
+                .calendar
+                    +icon('calendar')
+                    | Calendar
+                if attrs.sorting !== false
+                    .search-bar__sort-by
+                        | Sort by
+                        include /components/switch/switch
+                        include /components/switch/switch

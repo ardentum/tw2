@@ -9,16 +9,19 @@
 
   &__name {
     font-size: 16px;
-    margin-bottom: 5px;
   }
 
   &__rating {
+    @size: 12px;
+
     display: inline-block;
-    width: 100px;
+    width: @size * 5;
 
     div {
-      background: gold;
-      height: 20px;
+      background-image: url(_assets/icons/star.svg);
+      background-repeat: repeat-x;
+      background-size: @size;
+      height: @size;
     }
 
     .value-0 { width: 0; }

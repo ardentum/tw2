@@ -76,7 +76,34 @@ var ASSETS = ['./src/_assets/**/*.*'];
     });
 })();
 
-gulp.task('default', ['styles', 'templates', 'assets'], function () {
+
+(function () {
+  var svgSprite = require('gulp-svg-sprite');
+
+  var config = {
+    mode: {
+      symbol: true
+    }
+  };
+
+  gulp.task('sprite', function () {
+    gulp.src('./src/_assets/icons/*.svg')
+      .pipe(svgSprite(config))
+      .pipe(gulp.dest('.tmp/_assets/sprite'));
+  });
+})();
+
+var browserSync = require('browser-sync').create();
+
+gulp.task('browser-sync', function() {
+  browserSync.init({
+    server: {
+      baseDir: ".tmp/"
+    }
+  });
+});
+
+gulp.task('default', ['styles', 'templates', 'assets', 'browser-sync'], function () {
   function isOnlyChange(event) {
     return event.type === 'changed';
   }
