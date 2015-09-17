@@ -5,7 +5,7 @@ mixin search-bar(attrs)
         .search-bar__container
             if attrs.geo !== false
                 .search-bar__geo-select
-            .search-bar__query
+            input.search-bar__query(type="text" placeholder="What are you interested in?")
             button.button_red Find
 
             .search-bar__options

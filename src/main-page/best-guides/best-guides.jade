@@ -1,0 +1,12 @@
+include /users/user-block/user-block
+
+.best-guides
+    h2 Best guides in Munich
+    - var n = 0
+    while n < 6
+        .best-guides__guide
+            +user-block
+            .best-guides__tags
+                .tag_small Rocket Science
+                .tag_small Mindfulness Meditation
+        - n++

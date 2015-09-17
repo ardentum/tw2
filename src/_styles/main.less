@@ -1,4 +1,4 @@
-html *
+html
 {
    font-size: 13px;
    font-family: @mainFont;
@@ -26,6 +26,11 @@ h3 {
   font-weight: 300;
 }
 
+input {
+  outline: none;
+  border: none;
+}
+
 .main-wrapper {
   width: 1150px;
   margin: 0 auto;
@@ -37,25 +42,11 @@ h3 {
   }
 }
 
-.header {
-  padding: 2*@step 0;
-  position: relative;
-
-  &__logo {
-    .position-center;
-    font-size: 24px;
-  }
-
-  &__geo {
-    .position-right;
-    a {
-      text-decoration: none;
-      color: @mainTextColor;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+.logo {
+  background: url(/_assets/logo.svg) center no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 60px;
 }
 
 .search-bar {
@@ -93,30 +84,5 @@ h3 {
     .position-center;
     transform: translate(0%, -50%);
     margin-left: 5px;
-  }
-}
-
-.footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 40px 0 40px 0;
-  background: @darkBgColor;
-
-  &__logo {
-    font-size: 24px;
-    em {
-      font-size: 16px;
-    }
-  }
-
-  &__menu {
-    margin-top: 10px;
-    a {
-      text-decoration: none;
-      font-size: 16px;
-      margin-right: 20px;
-    }
   }
 }

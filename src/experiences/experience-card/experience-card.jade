@@ -1,6 +1,9 @@
+include /components/icon/icon
+include /users/user-block/user-block
+
 .experience-card
     .experience-card__user
-        include /users/user-block/user-block
+        +user-block
     img.experience-card__image(src="_assets/bg.jpg")
     .experience-card__content
         .experience-card__type Master-class
@@ -11,5 +14,7 @@
             .tag_small Rocket science
             .tag_small Handmade
     .experience-card__date-wrapper
-        .experience-card__date 21/12/2012
-        .experience-card__time 21:00
+        .experience-card__date
+            +icon-text('calendar', '21/12/2012')
+        .experience-card__time
+            +icon-text('time', '21:00')

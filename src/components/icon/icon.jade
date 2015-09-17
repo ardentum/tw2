@@ -1,3 +1,9 @@
 mixin icon(type)
    svg(class="icon " + "icon-" + type)
       use(xlink:href="#"+type)
+
+mixin icon-text(type, text)
+   .icon-text
+      svg(class="icon " + "icon-" + type)
+         use(xlink:href="#"+type)
+      =text

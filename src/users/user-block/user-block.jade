@@ -1,5 +1,6 @@
-.user-block
-    img.user-block__image(src='_assets/miroslav.jpg')
-    .user-block__name Miroslav Chechevitsa
-    .user-block__rating
-        .value-5
+mixin user-block(attrs)
+    div(class=("user-block" + ((attrs || {}).modifier ? "_" + (attrs || {}).modifier : "")))
+        img.user-block__image(src='_assets/miroslav.jpg')
+        .user-block__name Miroslav Chechevitsa
+        .user-block__rating
+            .value-5

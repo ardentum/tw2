@@ -18,24 +18,11 @@ html.no-js
             | to improve your experience.
         <![endif]-->
         .main-wrapper.global
-            .header
-                include ./layout/session-block/session-block
-                .header__logo
-                    | SPECS
-                    em Front
-                .header__geo
-                    a Munich, Germany
+            include /layout/header/header
             .content
                 block content
-            footer.footer
-                .main-wrapper
-                    .footer__logo
-                        | SPECS
-                        em Front
-                    .footer__menu
-                        a Contact
-                        a About
-                        a Questions
+            include /layout/footer/footer
+
 
 
 

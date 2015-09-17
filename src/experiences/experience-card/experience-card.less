@@ -1,5 +1,7 @@
 .experience-card {
   @imageHeight: 145px;
+  @hPadding: 25px;
+
   display: inline-block;
   width: 280px;
   background: #fff;
@@ -20,7 +22,7 @@
   }
 
   &__content {
-    padding: 25px 25px 45px 25px;
+    padding: 25px @hPadding 45px @hPadding;
     color: #222;
   }
 
@@ -41,20 +43,26 @@
 
   &__date-wrapper {
     background: #F10066;
-    padding: 25px;
+    padding: @hPadding;
     color: #fff;
+    position: relative;
+
+    .icon {
+      fill: #222;
+      opacity: 0.3;
+    }
   }
 
   &__date {
     display: inline-block;
     font-size: 16px;
     width: 120px;
-    padding-left: 30px;
   }
 
   &__time {
     display: inline-block;
     font-size: 16px;
-    padding-left: 30px;
+    position: absolute;
+    right: @hPadding;
   }
 }
