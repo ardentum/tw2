@@ -1,0 +1,33 @@
+extends /index.jade
+include /users/user-block/user-block
+include /components/icon/icon
+
+block content
+  .profile-page
+    .profile-page__info
+      a.profile-page__edit
+        +icon-text('edit', 'Edit profile')
+      .profile-page__user-block
+        +user-block
+      .profile-page__info-list
+        span.profile-page__email brittanyfox@gmail.com
+        span.profile-page__location Munich, Germany
+        span.profile-page__rating
+          | Rating 4.96
+          span.profile-page__reviews-count (256 reviews)
+        span.profile-page__languages
+          | Languages
+          span.profile-page__lang-label EN
+          span.profile-page__lang-label RU
+    .profile-page__actions
+      button.button_red Create event
+    .profile-page__experiences
+      .experience
+        .experience__type
+          | Your request
+        .experience__name
+          | Data Visualisation with Processing
+        .experience__description
+        .experience__date
+        .experience__tim
+

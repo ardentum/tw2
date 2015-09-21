@@ -1,0 +1,61 @@
+.profile-page {
+  &__info {
+    position: relative;
+    height: 300px;
+    padding-top: 275px;
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+
+  &__edit {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__user-block {
+    .user-block {
+      .position-center;
+      width: 400px;
+
+      &__image {
+        .round-image(140px);
+      }
+
+      &__name {
+        font-size: 32px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &__info-list {
+    font-size: 14px;
+    font-weight: 300;
+    & > span {
+      margin-right: 40px;
+    }
+  }
+
+  &__reviews-count {
+    opacity: 0.5;
+    margin-left: 5px;
+  }
+
+  &__lang-label {
+    @color: rgba(0,0,0,0.4);
+    padding: 2px 5px;
+    vertical-align: baseline;
+    margin-left: 10px;
+    color: @color;
+    border-radius: 2px;
+    border: solid 1px @color;
+    box-sizing: border-box;
+  }
+
+  &__actions {
+    margin: 40px 0;
+    text-align: center;
+  }
+}
